@@ -17,7 +17,7 @@ public class InitConfig {
         try (InputStream asStream = InitConfig.class.getClassLoader().getResourceAsStream("config/config.properties")) {
             properties.load(asStream);
         } catch (IOException e) {
-            e.printStackTrace();
+            // ignore
         }
 
         String serverName = properties.getProperty(SERVER_NAME_KEY);

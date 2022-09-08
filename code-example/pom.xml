@@ -16,6 +16,7 @@
         <module>multi-thread</module>
         <module>nio</module>
         <module>arithmetic</module>
+        <module>web-session</module>
     </modules>
 
     <properties>

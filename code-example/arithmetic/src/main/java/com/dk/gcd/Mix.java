@@ -9,7 +9,8 @@ public class Mix {
     /**
      * 都是奇数 采用更相相减法
      * @see CommonDivisor
-     * 采用
+     * 其余采用辗转相除法，当两个数均为偶数时，同时除2以减少运算开销
+     * @see Euclidean
      */
     public int gcd(int a, int b) {
         if (a == b) {
